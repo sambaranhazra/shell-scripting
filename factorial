@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Print the factorial of a number entered through command line
+
+if [ $# -ne 1 ]
+then
+	echo "Usage fact n"
+	exit 0
+fi
+factorial=1
+for ((number=1;number<=$1;number++))
+do
+	factorial=`expr $factorial \* $number`
+done
+echo The factorial of $1 is $factorial.

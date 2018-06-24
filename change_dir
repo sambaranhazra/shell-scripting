@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo which directory you want to change to?
+read dir
+cd $dir
+echo The current dir is $(pwd)
+echo "Contents of the current dir is: "
+ls
+exit 0
