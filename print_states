@@ -1,12 +1,10 @@
 #!/bin/bash
 
 #Print the state names
-IFS.OLD=$IFS
 file=states
 IFS=$'\n'
 for test in $(cat $file) 
 do
 	echo Visit beautiful $test
 done | sort -r
-IFS=$IFS.OLD
 
